@@ -13,13 +13,25 @@ private:
 
 	std::string file_name_;
 
+	std::string file_title_;
+
 	void get_file_path();
 
+
+	void create_name();
+
+	std::string buffer;
 public:
 	Memo();
 
 	~Memo();
 
-	void write_memo(const char* buffer);
+	void get_title();
+
+	void get_buffer();
+
+	void write_memo();
+
+
 };
 

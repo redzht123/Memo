@@ -4,8 +4,12 @@
 int main() {
 	std::string buffer;
 	Memo memo;
-	std::cin >> buffer;
-	memo.write_memo(buffer.c_str());
+	memo.get_title();
+	while (true){
+		memo.get_buffer();
+		memo.write_memo();
+	}
+
 	return 0;
 }
 
